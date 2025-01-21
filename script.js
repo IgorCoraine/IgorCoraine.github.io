@@ -69,7 +69,7 @@ async function fetchRepositories() {
     try {
         const response = await fetch('https://api.github.com/users/igorcoraine/repos?sort=updated');
         
-        if (!response.ok) throw new Error('Error fetching repositories:', response.statusText);
+        if (!response.ok) throw new Error(`Error fetching repositories: ${errorMessage} (Status Code: ${response.status})`);
         
         repositories = await response.json();
         
