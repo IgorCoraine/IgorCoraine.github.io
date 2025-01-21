@@ -10,12 +10,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
 </head>
 <body>
-    <div id="follower"></div> <!-- element to make follow mouse effect -->
+    <div id="follower"></div> <!-- Element to make follow mouse effect -->
     <header>
         <div class="logo-container">
             <img src="./me.jpg" alt="Logo" class="logo">
-            <h2 class="about">Hi, my name is Igor!</h2>
-            <h4 class="about">I am an industrial automation specialist with a strong passion for new technologies and software development. <br> Below, you will find a selection of personal projects that I have worked on.</h4>
+            <h2 class="about" id="greeting">Hi, my name is Igor!</h2>
+            <h4 class="about" id="description">I am an industrial automation specialist with a strong passion for new technologies and software development.<br>Below, you will find a selection of personal projects that I have worked on.</h4>
         </div>        
         <nav>
             <ul class="social-links">
@@ -26,7 +26,15 @@
                     <div class="dropdown-content">
                         <li class ="noScale"><p id="textToCopy">igor.coraine@gmail.com</p><icon class="fa-regular fa-copy scale" id="copyButton"></icon></li>
                     </div>
-                </div>       
+                </div>
+                <div class="dropdown scale">
+                    <li class="dropbtn fa-solid fa-language fa-lg"></li>
+                    <div class="dropdown-content">
+                        <li><button class="language-option" data-lang="en">English <span class="check-icon fa-solid fa-check" id="check-en" style="display: none;"></span></button></li>
+                        <li><button class="language-option" data-lang="pt">Português <span class="check-icon fa-solid fa-check" id="check-pt" style="display: none;"></span></button></li>
+                        <li><button class="language-option" data-lang="es">Español <span class="check-icon fa-solid fa-check" id="check-es" style="display: none;"></span></button></li>
+                    </div>
+                </div>        
             </ul>
         </nav>
     </header>

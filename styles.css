@@ -19,18 +19,18 @@ a {
 }
 
 .logo-container {
-    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    text-align: center; 
 }
 
 .logo {
     height: 20em; 
     width: 20em;
-    border-radius: 50%; /* Torna a imagem redonda */
-    object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
 .about {
-    margin-top: 1em; /* Adiciona um pouco de espaço acima do texto */
+    margin-top: 1em; 
 }
 
 
@@ -66,45 +66,44 @@ nav ul.social-links a {
     margin-right: 0;
 }
 
-#textToCopy{
-    font-size: 0.8em;
-}
-
 .dropbtn {
     margin-left: 1.25em; 
 }
 
 /* Dropdown container */
 .dropdown {
-    position: relative; /* Necessary for positioning the dropdown content */
-    display: inline-block; /* Display as inline element */
+    position: relative;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none; /* Initially hidden */
-    position: absolute; /* Absolute positioning relative to the container */
-    background-color: #2c2c2c; /* Background color of the dropdown */
-    min-width: 13rem; /* Minimum width */
-    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.5); /* Shadow */
-    z-index: 1; /* Ensure it appears above other elements */
-    margin-left: 1em;
+    position: absolute; 
+    background-color: #2c2c2c; 
+    min-width: 13rem;
+    font-size: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black; /* Text color of links */
-    padding: 0.3rem 0.5rem; /* Padding for links */
-    text-decoration: none; /* No underline on links */
-    display: block; /* Display as block to occupy full width */
-}
 
-/* Show dropdown content on hover over the button */
 .dropdown:hover .dropdown-content {
-    display: block; /* Show content when hovering over the dropdown */
+    display: block; 
 }
 
-/* Align text and copy button in line */
+
+.dropdown-content button {
+   color: white; 
+   background: none; 
+   border: none; 
+   padding: 0.5rem 1rem; 
+   text-align: left; 
+   width: 100%; 
+   cursor: pointer; 
+}
+
+.dropdown-content button:hover {
+   background-color: #3d3d3d; 
+}
+
 .noScale {
    display: inline-flex;
    align-items: center;
@@ -120,6 +119,11 @@ h1 {
     margin-bottom: 2em; 
 }
 
+a{
+    color: #eaeaea;
+    text-decoration: none;
+}
+
 .portfolio-grid {
     display: flex;
     flex-direction: column; 
@@ -127,27 +131,28 @@ h1 {
     list-style-type: none;
 }
 
-.portfolio-grid li {
+.portfolio-grid a {
     background-color: #2c2c2c; 
     border-radius: 0.5em;
     box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.5);
     margin-bottom: 1.25em; 
     padding: 1.25em; 
     width: calc(100% - 2.5em); 
-    transition: background-color 0.3s, transform 0.3s; 
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.portfolio-grid li:hover {
+.portfolio-grid a:hover {
     background-color: #3d3d3d; 
     transform: translateY(-0.25em); 
 }
 
-.portfolio-grid li h3,
-.portfolio-grid li p {
-   color: #eaeaea; 
+.portfolio-grid a h3,
+.portfolio-grid a p {
+   color: #eaeaea;
+   text-decoration: none; 
 }
 
-.portfolio-grid li .more-details {
+.portfolio-grid a .more-details {
    margin-top: 1em; 
    font-size: 0.875em; 
    color: #b0b0b0; 
