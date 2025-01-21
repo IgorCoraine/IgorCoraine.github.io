@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; 
+    color: #eaeaea; 
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #1a1a1a; 
+    padding: 1em 2em; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-container {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+}
+
+.logo {
+    height: 20em; 
+    width: 20em;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
+}
+
+.about {
+    margin-top: 1em; /* Adiciona um pouco de espaço acima do texto */
+}
+
+
+nav {
+    width: 80%;
+    border-radius: 1em;
+    background-color: #2c2c2c; 
+    padding: 0;
+}
+
+nav ul.social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+}
+
+nav ul.social-links li {
+    margin-left: 1.25em; 
+}
+
+nav ul.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+#copyButton {
+    margin-left: 0.5em;
+    margin-right: 0;
+}
+
+#textToCopy{
+    font-size: 0.8em;
+}
+
+.dropbtn {
+    margin-left: 1.25em; 
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative; /* Necessary for positioning the dropdown content */
+    display: inline-block; /* Display as inline element */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute; /* Absolute positioning relative to the container */
+    background-color: #2c2c2c; /* Background color of the dropdown */
+    min-width: 13rem; /* Minimum width */
+    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.5); /* Shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+    margin-left: 1em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black; /* Text color of links */
+    padding: 0.3rem 0.5rem; /* Padding for links */
+    text-decoration: none; /* No underline on links */
+    display: block; /* Display as block to occupy full width */
+}
+
+/* Show dropdown content on hover over the button */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show content when hovering over the dropdown */
+}
+
+/* Align text and copy button in line */
+.noScale {
+   display: inline-flex;
+   align-items: center;
+}
+
+/* Main content styling */
+main {
+    padding: 2em; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2em; 
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    list-style-type: none;
+}
+
+.portfolio-grid li {
+    background-color: #2c2c2c; 
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.25em; 
+    padding: 1.25em; 
+    width: calc(100% - 2.5em); 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.portfolio-grid li:hover {
+    background-color: #3d3d3d; 
+    transform: translateY(-0.25em); 
+}
+
+.portfolio-grid li h3,
+.portfolio-grid li p {
+   color: #eaeaea; 
+}
+
+.portfolio-grid li .more-details {
+   margin-top: 1em; 
+   font-size: 0.875em; 
+   color: #b0b0b0; 
+}
+
+#follower {
+    position: absolute; 
+    width: 1.5em; 
+    height: 1.5em; 
+    background-color: rgba(44, 44, 44, 0.7);
+    border-radius: 50%; 
+    pointer-events: none; 
+    transition: transform 0.1s ease; 
+}
